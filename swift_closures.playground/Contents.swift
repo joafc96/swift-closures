@@ -17,7 +17,7 @@ code(withTitle: "Simplest closure ever.") {
 
 code(withTitle: "Closures with parameters.", anothaFunc: {
     let sayHelloTo: (String) -> Void = {(name) in print("Bonjour pour mon ami \(name)")}
-     sayHelloTo("Rick")
+     sayHelloTo("John")
 })
 
 code(withTitle: "Closures that return value.", anothaFunc: {
@@ -31,7 +31,7 @@ code(withTitle: "Closures as function parameters.") {
         let capName = name.capitalized
         completion(capName)
     }
-    sayCapitalizedHello(for: "rick dalton") {
+    sayCapitalizedHello(for: "john wilkins booth") {
         (result) in
         print(result)
     }
